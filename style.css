@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* css var where contains all the color */
+:root {
+  --lightColor: #f9ebe4;
+  --blackondColor: #070101;
+  --texDesignColor: #fee468;
+  --primary-color: #185ee0;
+  --secondary-color: #e6eef9;
+}
+/* nav background */
+.nav-design-custom{
+background-color: #f9ebe4;
+}
+/* nav design for desktop and tabs */
+.nav-design-custom li{
+  list-style: none;
+  display: inline;
+  float: right;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.nav-design-custom .active{
+margin-right: 50px;
+}
+
+.nav-design-custom li a{
+text-decoration: none;
+color: #070101;
+font-size: 30px;
+font-weight: 700;
+}
+/* nav design for desktop and tabs finish from here */
+
+/* highlighter design */
+.highlight-container,
+.highlight {
+position: relative;
+}
+
+.highlight-container {
+display: inline-block;
+}
+
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  background: #fee468;
+  margin-top: 20px;
+
+}
+/* highlighter design finish*/
+/* hero section design */
+.hero-section {
+background-color: var(--lightColor);
+}
+
+.container-fluid-md .container {
+padding: 200px 0px 200px 100px;
+}
+
+.container-fluid-md .container h1 {
+  text-transform: capitalize;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 55px;
+  font-size: 48px;
+}
+
+.container-fluid-md .container p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 50%;
+  color: #070101;
+  padding-bottom: 50px;
+}
+
+.btn-custom {
+  background-color: #070101;
+  padding: 10px 25px;
+  text-transform: capitalize;
+  text-align: center;
+  transition: 0.3s;
+  color: white;
+
+}
+.btn-custom a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-custom:before {
+  content: " ";
+  display: block;
+  width: 150px;
+  height: 45px;
+  position: absolute;
+  background: none;
+  margin-left: -20px;
+  border: 2px solid black;
+
+}
+
+.btn-custom-project:before {
+  width: 172px;
+}
+/* hero section finish from here */
+
+/* my work project section design*/
+.projects-block {
+padding: 150px 80px;
+}
+
+.tags-container {
+display: flex;
+align-items: left;
+}
+
+.tags-container a {
+  padding: 5px;
+  background-color: var(--lightColor);
+  color: #070101;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 5px;
+  text-decoration: none !important;
+
+}
+
+.content-container-custom h1 {
+  text-transform: capitalize;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 55px;
+  font-size: 48px;
+}
+
+.content-container-custom p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+
+  color: #070101;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  background-color: white;
+}
+
+#latest-work {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 0.5;
+}
+/* my work project section design finish from here*/
+
+/* abou section design */
+.inner-child-one h1 {
+  text-transform: capitalize;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 55px;
+  font-size: 48px;
+}
+
+.inner-child-one p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #070101;
+  line-height: 30px;
+}
+/* about section design finish from here */
+.contact-section {
+background-color: var(--lightColor);
+}
+
+/* fliter tab */
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+}
+
+.tabs * {
+  z-index: 2;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 200px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+input[type=radio]:checked+label {
+  color: var(--blackondColor);
+}
+
+input[type=radio]:checked+label>.notification {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+input[id=radio-1]:checked~.glider {
+  transform: translateX(0);
+}
+
+input[id=radio-2]:checked~.glider {
+  transform: translateX(100%);
+}
+
+input[id=radio-3]:checked~.glider {
+  transform: translateX(200%);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 54px;
+  width: 200px;
+  background-color: var(--lightColor);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+.tags-selector {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+#nav-btn-custom{
+  display: none;
+}
+/* filter tab design finish from here */
+/* ************************ */
+
+.cursor{
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius:50%;
+  top:0;
+  left:0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+}

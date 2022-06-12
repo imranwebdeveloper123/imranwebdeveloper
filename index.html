@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to main css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to bootstrap css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link to fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- link to google fonts -->
+    <link rel="stylesheet" href="google fonts.css">
+    <!-- link to for responsive css -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- link to jaquary -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- link to bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- mobile nav design css file -->
+    <link rel="stylesheet" href="mobile-nav.css">
+</head>
+
+<body>
+    <!-- nav-bar for only mobile-->
+    <div id="menu" class="">
+        <nav class="main-nav">
+            <ul>
+
+                <li class="mobileNav"><a href="#myworks"> <span class="highlight-container"><span class="highlight">my
+                                works</span></span> </a></li>
+                <li class="mobileNav"><a href="#contact"> <span class="highlight-container"><span class="highlight">get
+                                intouch</span></span> </a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- mobile nav section finish from here -->
+    <!-- toggle bar for mobilel nav -->
+    <button class="toggle-menu-custom" id="nav-btn-custom"><span></span></button>
+    <!-- toggle bar for mobilel nav -->
+    <!-- nav for only desktop and tab users -->
+    <div class="row ">
+        <div class="col-md-12 nav-design-custom">
+            <li class="active"><a href="#myworks"> <span class="highlight-container"><span
+                            class="highlight">my works</span></span> </a></li>
+            <li> <a href="#contact"><span class="highlight-container"><span class="highlight">get in
+                            touch</span></span></a></li>
+        </div>
+    </div>
+    <!-- nav section finished from here -->
+
+    <!-- hero section contians brif introduce myself -->
+    <div class="container-fluid-md hero-section">
+        <div class="container row">
+            <div class="col-md-12">
+                <!-- we use span class highlight here to highlight design on h1 text -->
+                <h1>hi , i'm imran, <span class="highlight-container"><span class="highlight">web
+                            designer</span></span><br>and <span class="highlight-container"><span class="highlight">UI
+                            UX</span></span> designer</h1>
+                <p class="pt-3">
+                    I design and build beautiful website for
+                    businesses around the globe. if you need a modern
+                    and poweful website, send me an eamil. if we are a
+                    good fit, i will give you a time and cost
+                    estimate.
+                </p>
+                <button type="button" class="btn-custom btn-custom"id="my-work-btn">see my work</button>
+            </div>
+        </div>
+    </div>
+    <!-- hero section finish from here -->
+
+    <!-- my works section contains my project which i have completed-->
+    <div class="row  tags-selector  ">
+        <!-- this is tab user can easily filter -->
+        <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" checked />
+            <label class="tab" for="radio-1" onclick="filterSelection('all')">Show all</label>
+            <input type="radio" id="radio-2" name="tabs" />
+            <label class="tab" for="radio-2" onclick="filterSelection('webdesign')">web design</label>
+            <input type="radio" id="radio-3" name="tabs" />
+            <label class="tab" for="radio-3" onclick="filterSelection('webdevelopment')">web development</label>
+            <span class="glider"></span>
+        </div>
+        <!-- tab section finish from here -->
+    </div>
+    <!-- my works section project block it's contains block type project section -->
+    <div class="container-fluid-md" id="myworks">
+        <!-- this is project number one -->
+        <div class="project-section filterDiv   webdevelopment">
+            <div class="row  projects-block ">
+                <div class="col-md-6 content-container-custom">
+                    <p id="latest-work">latest work</p>
+                    <h1 class="pb-2">personal portfolio website</h1>
+                    <div class="tags-container pb-2">
+                        <a href="#">web design</a>
+                        <a href="#">web development</a>
+                        <a href="#">figma</a>
+                    </div>
+                    <p class="pt-5 pb-5 ">
+                        This a personal portfolio website design for web designers ,
+                        Who work for any
+                        freelance company. and i used Figma then covert into live site using HTML5, CSS, JAVASCRIPT .
+                    </p>
+                    <button type="button" class="btn-custom btn-custom-project"id="portfolioProject1">see this project </a></button>
+                </div>
+                <!-- project image preview -->
+                <div class="col-md-6  image-container">
+                    <img src="images/portfolio2.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- this is project number two -->
+        <div class="project-section filterDiv  webdevelopment">
+            <div class="row  projects-block ">
+                <div class="col-md-6 content-container-custom">
+                    <p id="latest-work">recent work</p>
+                    <h1 class="pb-2">personal portfolio website</h1>
+                    <div class="tags-container pb-2">
+                        <a href="#">web design</a>
+                        <a href="#">web development</a>
+                        <a href="#">figma</a>
+                    </div>
+                    <p class="pt-5 pb-5 ">
+                        This a personal portfolio website 
+                        design for who works for any company 
+                        and want to display all information
+                         in  a single web page. i built this site through HTML, CSS , Javascript
+                      
+                    </p>
+                    <button type="button" class="btn-custom btn-custom-project"id="portfolioProject2">see this project</button>
+                </div>
+                <!-- project image preview -->
+                <div class="col-md-6  image-container">
+                    <img src="images/porfolio project.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- this is project number three-->
+        <div class=" project-section filterDiv webdesign">
+            <div class="row  projects-block ">
+                <div class="col-md-6 content-container-custom">
+                    <p id="latest-work">latest work</p>
+                    <h1 class="pb-2">internet service provider website</h1>
+                    <div class="tags-container pb-2">
+                        <a href="#">web design</a>
+                        
+                        <a href="#">figma</a>
+                    </div>
+                    <p class="pt-5 pb-5 "> 
+                        it's a broadband internet service provider website for my local client . I only deisgn it on figma haven't turn into live site yet
+                    </p>
+                    <button type="button" class="btn-custom btn-custom-project"id="internetWebsite">see this project</button>
+                </div>
+                <div class="col-md-6  image-container"><img src="images/internet.png" alt="" srcset=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- project section finished from here -->
+
+    <!-- about section -->
+    <section class="container-fluid about-section">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-5 inner-child-one p-5">
+                    <h1>what <span class="highlight-container"><span class="highlight">i do</span></span>?</h1>
+                </div>
+                <div class="col-md-7 inner-child-one p-5">
+                    <h3>Design</h3>
+                    <p>I design beautiful and powerful websites for modern businesses.
+                        any businesses today needs a website that wins customer's heart and helps
+                        do your business well i make sure you website is up to that standard
+                    </p>
+
+                    <h3 class="pt-5">Develeop</h3>
+                    <p> I built websites in both way customly or using CMS if you want a unique and pogrammable
+                        website for your business then I can make a website using pogramming language . and if
+                        you want to create a beautiful website which you can easily manage or edit then i can built
+                        a website using CMS.
+                    </p>
+                    <h3 class="pt-5">Figma</h3>
+                    <p> If you want a unique and stylish modern website for your businesses but you have no idea
+                        which kind of design suitable for your business then i can design your dream site on figma
+                        and develeop into real live site .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section finis from hre -->
+
+    <!-- contact section -->
+    <section class="container-fluid contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 inner-child-one pt-5">
+                    <h1>want to <span class="highlight-container"><span class="highlight">work?</span></span> </h1>
+                </div>
+                <div class="col-md-7 inner-child-one p-5">
+                    <p>
+                        if you need a modern and powerful stylish website for your business
+                        strtup or persollay, I,m avaliable for work. You can directly
+                        email me <strong> mdimrankhan@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cursor"></div>
+  
+    <div class="cursor2"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
