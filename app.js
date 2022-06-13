@@ -59,16 +59,16 @@ $('.mobileNav').click(function () {
 
 var hello = document.getElementById("portfolioProject1");
 hello.onclick = function () {
-  window.location.href = "https://github.com/imranwebdeveloper123/imranwebdeveloper/projectview0.html";
+  window.location.href = "projectview0.html";
 };
 var hello2 = document.getElementById("portfolioProject2");
 hello2.onclick = function () {
-  window.location.href = "https://github.com/imranwebdeveloper123/imranwebdeveloper/projectreview2.html";
+  window.location.href = "projectreview2.html";
 };
 
 var hello1 = document.getElementById("internetWebsite");
 hello1.onclick = function () {
-  window.location.href = "https://github.com/imranwebdeveloper123/imranwebdeveloper/projectreview1.html";
+  window.location.href = "projectreview1.html";
 };
 
 var hello5 = document.getElementById("my-work-btn");
