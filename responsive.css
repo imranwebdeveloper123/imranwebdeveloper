@@ -62,4 +62,12 @@
   .tabs {
     transform: scale(0.6);
   }
+  
+.cursor{
+display:none;
+}
+.cursor2{
+display:none;
+}
+
 }
