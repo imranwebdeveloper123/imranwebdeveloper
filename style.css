@@ -172,6 +172,15 @@ align-items: left;
 /* my work project section design finish from here*/
 
 /* abou section design */
+.about-section .container{
+  padding: 50px;
+}
+.inner-child-one{
+  padding: 50px;
+}
+
+
+
 .inner-child-one h1 {
   text-transform: capitalize;
   font-family: 'Abril Fatface', cursive;
