@@ -51,7 +51,12 @@
     padding: 50px;
   }
 }
-
+.about-section .container{
+  padding: 30px;
+}
+.inner-child-one{
+  padding: 30px;
+}
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
