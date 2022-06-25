@@ -77,6 +77,12 @@ hello5.onclick = function () {
 };
 
 
+var hello6 = document.getElementById("my-work-btn");
+hello6.onclick = function () {
+  window.location.href = "resturantwebsite.html";
+};
+
+
 var cursor = document.querySelector(".cursor");
 var cursor2 = document.querySelector(".cursor2");
 document.addEventListener("mousemove",function(e){
