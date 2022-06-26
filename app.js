@@ -77,7 +77,7 @@ hello5.onclick = function () {
 };
 
 
-var hello6 = document.getElementById("my-work-btn");
+var hello6 = document.getElementById("resturantwebsite");
 hello6.onclick = function () {
   window.location.href = "resturantwebsite.html";
 };
