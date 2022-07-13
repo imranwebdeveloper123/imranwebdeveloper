@@ -1,11 +1,5 @@
 
-@media only screen and (max-width:600px){
-  h1{
-  font-size:32px !important;
-  }
-  p{
-  font-size:18px !important;}
-}
+
 @media only screen and (max-width: 800px) {
 
   .image-container {
