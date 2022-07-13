@@ -1,6 +1,27 @@
-
-
 @media only screen and (max-width: 800px) {
+
+  .container-fluid-md .container p {
+  
+   padding:10px 0px !important;
+  }
+  .content-container-custom h1{
+    font-size: 28px!important;
+    line-height: 35px;
+  }
+  .btn-custom {
+   padding: 8px 10px;
+  
+  }
+  .btn-custom:before { 
+    width: 132px;
+    height: 42px;
+    margin-left: 0px;
+  }
+  .content-container-custom p {
+ font-size: 16px;
+  }
+  
+
 
   .image-container {
     width: 300px;
@@ -50,8 +71,13 @@
   }
 
   .projects-block {
-    padding: 50px;
-  }
+    padding: 30px 30px !important;
+
+    }
+    .content-container-custom p {
+    
+      padding: 10px 0px;
+    }
 }
 .about-section .container{
   padding:55px 30px;
@@ -69,7 +95,11 @@
   .tabs {
     transform: scale(0.6);
   }
+  header{
+    width: auto!important;
+    background-color: red !important;
   
+  }
 .cursor{
 display:none;
 }
